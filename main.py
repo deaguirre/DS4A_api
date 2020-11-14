@@ -37,7 +37,9 @@ model_path = {
     'viscosity_LM'    : '052_Lineal.sav',
     'viscosity_RF'    : '052_rf_1.sav',
     'viscosity_SVM'   : '052_SVM1.sav',
-    'viscosity_XGB'   : '052_XGB1.sav'
+    'viscosity_XGB'   : '052_XGB1.sav',
+
+    'yield_XGB'       : '053_Yield_XGB2.sav',
 }
 
 def modelSelection(output, selection):
@@ -61,9 +63,10 @@ def predict():
     """
 
     # Get data as JSON from POST
-    #print('HOLA API')
+    # print('HOLA API')
+
     data = request.get_json()
-    #print(data)
+    # print(data)
 
     # Build input data
     test  = pd.DataFrame(data['data'], index=[1])
@@ -74,7 +77,8 @@ def predict():
         test1[i] = mn
 
     model = modelSelection(data['output'], data['model'])
-    
+    # print(model)
+
     # In case of intercept
     if data['intercept'] is True:
             test1 = sm.add_constant(test1, has_constant='add')
@@ -84,17 +88,19 @@ def predict():
         prediction = model.predict(test1)
     except:
         return "The prediction was unsuccessfull"
-    print(prediction)
+    #print(prediction)
+
     # Send response
     message = {
         "status": 200,
         "message": [
             {
                 "task": "Prediction Transaction",
-                "prediction": np.array(prediction)[0]
+                "prediction": float(np.array(prediction)[0])
             }
         ]
     }
+    print( np.array(prediction)[0] )
     response = jsonify(message)
     response.status_code = 200
 
@@ -120,7 +126,7 @@ def surface_response():
     var2 = data['var2']
 
     M = prediccionMallaModelo(original_data1, model, variables, var1, var2, k=100, normal='other')
-    print(M)
+    # print(M)
     Z = M['Z']
     X = M['X'] * mean_data.loc[var1,'value']
     Y = M['Y'] * mean_data.loc[var2,'value']

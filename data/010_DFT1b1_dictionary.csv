@@ -10,7 +10,7 @@ Yield,-
 D03_amn_carnaza,-
 D03_vap_press,-
 D03_carnaza,-
-D03_cuero,-
+D03_cuero,Leather as raw material
 D03_orillo,-
 D03_patica,-
 D03_vaqueta,-
@@ -29,22 +29,22 @@ D06_phT,Liqueur tower outflow pH
 D06_phUF2,pH of NaOH outflow UF2
 D09_T_condensing,Condenser temperature (ºC)
 D09_T_leg,-
-D09_T_liquor,-
+D09_T_liquor,Liqueur temperature paraflash (ºC)
 D09_Conc_liquor,-
 D09_Tri_FrecA,Triplex pump A frecuency (osc/min)
 D09_Tri_FrecB,Triplex pump B frecuency (osc/min)
 D09_Tri_FrecD,-
 D10_T_esteril,-
-D10_T_out_gelatin,-
-D10_T_out_water,-
+D10_T_out_gelatin,Sterilizer gelatin outflow temperature (ºC)
+D10_T_out_water,Sterilizer water outflow temperature (ºC)
 D10_P_vaccum,Sterilizer vaccum pressure (inHg)
 D11_Ts_ref,Suction temperature (ºC)
 D11_Td_ref,-
 D12_P_Exch_Water,-
 D12_Kath_Lvl,-
 D12_P_atom_cond,-
-D12_P_atom_regn,-
-D12_P_filt,-
+D12_P_atom_regn,Regenerator atomization pressure (psi)
+D12_P_filt,Filter drop pressure (in H2O)
 D12_P_cond,-
 D12_P_regen,Regenerator drop pressure (in H2O)
 D12_TA,Air temperature point A (ºC)
