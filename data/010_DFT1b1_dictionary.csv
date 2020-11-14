@@ -1,0 +1,73 @@
+variable,long_name
+Batch,-
+Bloom,Bloom (g)
+Viscosidad,Viscosity (mP)
+viscosity,Viscosity (mP)
+Claridad,Clarity (NTU)
+clarity,Clarity (NTU)
+AverageProduction,-
+Yield,-
+D03_amn_carnaza,-
+D03_vap_press,-
+D03_carnaza,-
+D03_cuero,-
+D03_orillo,-
+D03_patica,-
+D03_vaqueta,-
+D04_ph_initial_liq,Light liqueur initial pH
+D04_clarity_initial_liq,Gelatin liqueur initial clarity (NTU)
+D04_total_residue,Total residues (kg)
+D04_extract_duration,Extraction duration (hrs)
+D05_peroxido_hid,Hydrogen peroxide (ppm)
+D05_dioxido_azufre,Sulfur dioxide (ppm)
+D05_NTU_L1,"Light liqueur initial clarity, Tank 1 (NTU)"
+D05_NTU_L3,"Light liqueur initial clarity, Tank 3 (NTU)"
+D05_NTU_FP1,"Light liqueur clarity, filter press 1 (NTU)"
+D05_NTU_FP2,"Light liqueur clarity, filter press 2 (NTU)"
+D05_NTU_FP4,"Light liqueur clarity, filter press 4 (NTU)"
+D06_phT,Liqueur tower outflow pH
+D06_phUF2,pH of NaOH outflow UF2
+D09_T_condensing,Condenser temperature (ºC)
+D09_T_leg,-
+D09_T_liquor,-
+D09_Conc_liquor,-
+D09_Tri_FrecA,Triplex pump A frecuency (osc/min)
+D09_Tri_FrecB,Triplex pump B frecuency (osc/min)
+D09_Tri_FrecD,-
+D10_T_esteril,-
+D10_T_out_gelatin,-
+D10_T_out_water,-
+D10_P_vaccum,Sterilizer vaccum pressure (inHg)
+D11_Ts_ref,Suction temperature (ºC)
+D11_Td_ref,-
+D12_P_Exch_Water,-
+D12_Kath_Lvl,-
+D12_P_atom_cond,-
+D12_P_atom_regn,-
+D12_P_filt,-
+D12_P_cond,-
+D12_P_regen,Regenerator drop pressure (in H2O)
+D12_TA,Air temperature point A (ºC)
+D12_TB,-
+D12_TD,-
+D14_vpA,-
+D14_vpB,Vapor pressure point B (ºC)
+D14_vpD,-
+D14_T2A,-
+D14_T2B,Zone 2B temperature (ºC)
+D14_T2D,-
+D14_T3A,-
+D14_T3B,-
+D14_3D,-
+D14_T4A,Zone 4A temperature (ºC)
+D14_T4B,-
+D14_T4D,-
+D14_T5A,-
+D14_T5B,Zone 5B temperature (ºC)
+D14_T5D,Zone 5D temperature (ºC)
+D14_T6A,Zone 6A temperature (ºC)
+D14_T6B,-
+D14_T6D,-
+D14_T7A,-
+D14_T7B,-
+D14_T7D,-
