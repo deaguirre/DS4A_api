@@ -207,5 +207,4 @@ def not_found(error=None):
 
 
 if __name__ == '__main__':
-    api.run(port=5000, debug=True)
-# , host='0.0.0.0'
+    api.run(port=5000, debug=False, host= '0.0.0.0')
