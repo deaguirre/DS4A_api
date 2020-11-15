@@ -1,73 +1,74 @@
-variable,long_name
-Batch,-
-Bloom,Bloom (g)
-Viscosidad,Viscosity (mP)
-viscosity,Viscosity (mP)
-Claridad,Clarity (NTU)
-clarity,Clarity (NTU)
-AverageProduction,-
-Yield,-
-D03_amn_carnaza,-
-D03_vap_press,-
-D03_carnaza,-
-D03_cuero,Leather as raw material
-D03_orillo,-
-D03_patica,-
-D03_vaqueta,-
-D04_ph_initial_liq,Light liqueur initial pH
-D04_clarity_initial_liq,Gelatin liqueur initial clarity (NTU)
-D04_total_residue,Total residues (kg)
-D04_extract_duration,Extraction duration (hrs)
-D05_peroxido_hid,Hydrogen peroxide (ppm)
-D05_dioxido_azufre,Sulfur dioxide (ppm)
-D05_NTU_L1,"Light liqueur initial clarity, Tank 1 (NTU)"
-D05_NTU_L3,"Light liqueur initial clarity, Tank 3 (NTU)"
-D05_NTU_FP1,"Light liqueur clarity, filter press 1 (NTU)"
-D05_NTU_FP2,"Light liqueur clarity, filter press 2 (NTU)"
-D05_NTU_FP4,"Light liqueur clarity, filter press 4 (NTU)"
-D06_phT,Liqueur tower outflow pH
-D06_phUF2,pH of NaOH outflow UF2
-D09_T_condensing,Condenser temperature (ºC)
-D09_T_leg,-
-D09_T_liquor,Liqueur temperature paraflash (ºC)
-D09_Conc_liquor,-
-D09_Tri_FrecA,Triplex pump A frecuency (osc/min)
-D09_Tri_FrecB,Triplex pump B frecuency (osc/min)
-D09_Tri_FrecD,-
-D10_T_esteril,-
-D10_T_out_gelatin,Sterilizer gelatin outflow temperature (ºC)
-D10_T_out_water,Sterilizer water outflow temperature (ºC)
-D10_P_vaccum,Sterilizer vaccum pressure (inHg)
-D11_Ts_ref,Suction temperature (ºC)
-D11_Td_ref,-
-D12_P_Exch_Water,-
-D12_Kath_Lvl,-
-D12_P_atom_cond,-
-D12_P_atom_regn,Regenerator atomization pressure (psi)
-D12_P_filt,Filter drop pressure (in H2O)
-D12_P_cond,-
-D12_P_regen,Regenerator drop pressure (in H2O)
-D12_TA,Air temperature point A (ºC)
-D12_TB,-
-D12_TD,-
-D14_vpA,-
-D14_vpB,Vapor pressure point B (ºC)
-D14_vpD,-
-D14_T2A,-
-D14_T2B,Zone 2B temperature (ºC)
-D14_T2D,-
-D14_T3A,-
-D14_T3B,-
-D14_3D,-
-D14_T4A,Zone 4A temperature (ºC)
-D14_T4B,-
-D14_T4D,-
-D14_T5A,-
-D14_T5B,Zone 5B temperature (ºC)
-D14_T5D,Zone 5D temperature (ºC)
-D14_T6A,Zone 6A temperature (ºC)
-D14_T6B,-
-D14_T6D,-
-D14_T7A,-
-D14_T7B,-
-D14_T7D,-
+variable,long_name,short_name
+Batch,Batch,Batch
+Bloom,Bloom (g),Bloom (g)
+Viscosidad,Viscosity (mP),Viscosity (mP)
+viscosity,Viscosity (mP),Viscosity (mP)
+Claridad,Clarity (NTU),Clarity (NTU)
+clarity,Clarity (NTU),Clarity (NTU)
+AverageProduction,Average Production (kg/h),Average Production (kg/h)
+Yield,Yield (%),Yield (%)
+D03_amn_carnaza,Amount of bait (g),Amount of bait (g)
+D03_vap_press,Vapour pressure (mmHg),Vapour Press. (mmHg)
+D03_carnaza,Bait as raw material,Bait as raw material
+D03_cuero,Leather as raw material,Leather as raw material
+D03_orillo,Selvage leather as raw material,Selvage leather as raw material
+D03_patica,Beef leg as raw material,Beef leg as raw material
+D03_vaqueta,Cowhide leather as raw material,Cowhide leather as raw material
+D04_ph_initial_liq,Light liqueur initial pH,Light liqueur initial pH
+D04_clarity_initial_liq,Gelatin liqueur initial clarity (NTU),Gelatin liqueur initial clarity (NTU)
+D04_total_residue,Total residues (kg),Total residues (kg)
+D04_extract_duration,Extraction duration (hrs),Extraction duration (hrs)
+D05_peroxido_hid,Hydrogen peroxide (ppm),Hydrogen peroxide (ppm)
+D05_dioxido_azufre,Sulfur dioxide (ppm),Sulfur dioxide (ppm)
+D05_NTU_L1,"Light liqueur initial clarity, Tank 1 (NTU)","Light liqueur initial clarity, Tank 1 (NTU)"
+D05_NTU_L3,"Light liqueur initial clarity, Tank 3 (NTU)","Light liqueur initial clarity, Tank 3 (NTU)"
+D05_NTU_FP1,"Light liqueur clarity, filter press 1 (NTU)","Light liqueur clarity, filter press 1 (NTU)"
+D05_NTU_FP2,"Light liqueur clarity, filter press 2 (NTU)","Light liqueur clarity, filter press 2 (NTU)"
+D05_NTU_FP4,"Light liqueur clarity, filter press 4 (NTU)","Light liqueur clarity, filter press 4 (NTU)"
+D06_phT,Liqueur tower outflow pH,Liqueur tower outflow pH
+D06_phUF2,pH of NaOH outflow UF2,pH of NaOH outflow UF2
+D09_T_condensing,Condenser temperature (ºC),Condenser Temp. (ºC)
+D09_T_leg,Separator leg temperature (ºC),Separator leg Temp. (ºC)
+D09_T_liquor,Liqueur temperature paraflash (ºC),Liqueur Temp. paraflash (ºC)
+D09_Conc_liquor,Liqueur concentration (%),Liqueur concentration (%)
+D09_Tri_FrecA,Triplex pump A frecuency (osc/min),Triplex pump A frecuency (osc/min)
+D09_Tri_FrecB,Triplex pump B frecuency (osc/min),Triplex pump B frecuency (osc/min)
+D09_Tri_FrecD,Triplex pump D frecuency (osc/min),Triplex pump D frecuency (osc/min)
+D10_T_esteril,Sterilizer temperature (ºC),Sterilizer Temp. (ºC)
+D10_T_out_gelatin,Sterilizer gelatin outflow temperature (ºC),Sterilizer gelatin outflow Temp. (ºC)
+D10_T_out_water,Sterilizer water outflow temperature (ºC),Sterilizer water outflow Temp. (ºC)
+D10_P_vaccum,Sterilizer vaccum pressure (inHg),Sterilizer vaccum Press. (inHg)
+D11_Ts_ref,Suction temperature (ºC),Suction Temp. (ºC)
+D11_Td_ref,Discharge temperature (ºC),Discharge Temp. (ºC)
+D12_P_Exch_Water,Water exchanger temperature (ºC),Water exchanger Temp. (ºC)
+D12_Kath_Lvl,Kathene level,Kathene level
+D12_P_atom_cond,Conditioner atomization pressure (psi),Conditioner atomization Press. (psi)
+D12_P_atom_regn,Regenerator atomization pressure (psi),Regenerator atomization Press. (psi)
+D12_P_filt,Filter drop pressure (in H2O),Filter drop Press. (in H2O)
+D12_P_cond,Conditioner drop pressure (in H2O),Conditioner drop Press. (in H2O)
+D12_P_regen,Regenerator drop pressure (in H2O),Regenerator drop Press. (in H2O)
+D12_TA,Air temperature point A (ºC),Air Temp. point A (ºC)
+D12_TB,Air temperature point B (ºC),Air Temp. point B (ºC)
+D12_TD,Air temperature point D (ºC),Air Temp. point D (ºC)
+D14_vpA,Vapor pressure point A (ºC),Vapor Press. point A (ºC)
+D14_vpB,Vapor pressure point B (ºC),Vapor Press. point B (ºC)
+D14_vpD,Vapor pressure point D (ºC),Vapor Press. point D (ºC)
+D14_T2A,Zone 2A temperature (ºC),Zone 2A Temp. (ºC)
+D14_T2B,Zone 2B temperature (ºC),Zone 2B Temp. (ºC)
+D14_T2D,Zone 2D temperature (ºC),Zone 2D Temp. (ºC)
+D14_T3A,Zone T3A temperature (ºC),Zone T3A Temp. (ºC)
+D14_T3B,Zone T3B temperature (ºC),Zone T3B Temp. (ºC)
+D14_T3D,Zone T3D temperature (ºC),Zone T3D Temp. (ºC)
+D14_3D,Zone T3D temperature (ºC),Zone T3D Temp. (ºC)
+D14_T4A,Zone 4A temperature (ºC),Zone 4A Temp. (ºC)
+D14_T4B,Zone 4B temperature (ºC),Zone 4B Temp. (ºC)
+D14_T4D,Zone 4D temperature (ºC),Zone 4D Temp. (ºC)
+D14_T5A,Zone 5A temperature (ºC),Zone 5A Temp. (ºC)
+D14_T5B,Zone 5B temperature (ºC),Zone 5B Temp. (ºC)
+D14_T5D,Zone 5D temperature (ºC),Zone 5D Temp. (ºC)
+D14_T6A,Zone 6A temperature (ºC),Zone 6A Temp. (ºC)
+D14_T6B,Zone 6B temperature (ºC),Zone 6B Temp. (ºC)
+D14_T6D,Zone 6D temperature (ºC),Zone 6D Temp. (ºC)
+D14_T7A,Zone 7A temperature (ºC),Zone 7A Temp. (ºC)
+D14_T7B,Zone 7B temperature (ºC),Zone 7B Temp. (ºC)
+D14_T7D,Zone 7D temperature (ºC),Zone 7D Temp. (ºC)

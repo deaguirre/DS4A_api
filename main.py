@@ -43,10 +43,22 @@ model_path = {
 }
 
 def modelSelection(output, selection):
-    selector = "{0}_{1}".format(str.lower(output), str.upper(selection))
+    """
+    Select a defined model from repository based on a model abbreviature (pg. LM) and output (pg. bloom)
 
+    Args:
+        output (string): a string indicating the type of output required
+        model (string): model abbreviation p.eg. LM, RF, SVM, XGB
+
+    Returns:
+        model (object): model object with a prediction method.
+    """
+    # Create a string to matcht with model_path keys
+    selector = "{0}_{1}".format(str.lower(output), str.upper(selection))
+    # Open model from models directory
     model = joblib.load(open(model_route / model_path[selector], 'rb'))
 
+    # Model of XGB and RF kind are saved as grid search
     if str.upper(selection) in ['XGB', 'RF']:
         model = model.best_estimator_
 
@@ -58,8 +70,19 @@ def modelSelection(output, selection):
 @api.route('/api/predict', methods=['POST'])
 def predict():
     """
-    POST method for prediction.
-    The data most contain information about the model.
+    POST method for prediction (/api/predict). This method receives a POST 
+    request and calculates a prediction.
+
+    Args: 
+        None - get_json a request as a dictionary with
+            ['data']: dataFrame with only one row and column as variables in the process
+            ['model']: model abbreviation p.eg. LM, RF, SVM, XGB
+            ['output']: a string indicating the type of output required
+            ['value']: the model works with a design matrix
+
+    Returns:
+        None - 
+
     """
 
     # Get data as JSON from POST
@@ -100,7 +123,7 @@ def predict():
             }
         ]
     }
-    print( np.array(prediction)[0] )
+    # print( np.array(prediction)[0] )
     response = jsonify(message)
     response.status_code = 200
 
@@ -109,7 +132,23 @@ def predict():
 
 @api.route('/api/surface_response', methods=['POST'])
 def surface_response():
-    # Get data as JSON from POST
+    """
+    POST method for prediction (/api/surface_response). This method receives a POST 
+    request and calculates a surface grid.
+
+    Args: 
+        None - get_json a request as a dictionary with
+            ['model']: model abbreviation p.eg. LM, RF, SVM, XGB
+            ['output']: a string indicating the type of output required
+            ['variables']: relevant variables for the model selected, the dataframe 
+            with all posibles variables is loaded in this instance.
+            ['var1']: variable in X axis
+            ['var2']: variable in Y axis
+
+    Returns:
+        None - sends a dictionary as 
+
+    """
     data = request.get_json()
     
 
@@ -156,17 +195,6 @@ def surface_response():
 
     return response
 
-    #return response
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -174,6 +202,10 @@ def surface_response():
 def status():
     """
     GET method for API status verification.
+
+    Args: None - a request
+
+    Returns: None - default message to print to know if the API is working
     """
 
     message = {
@@ -192,6 +224,10 @@ def status():
 def not_found(error=None):
     """
     GET method for not found routes.
+
+    Args: None - a request
+
+    Returns: None - a message when the request is not recognized
     """
 
     message = {
